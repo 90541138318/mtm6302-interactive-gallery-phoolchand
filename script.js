@@ -1,6 +1,6 @@
 // Array of objects containing image data
 const images = [
-    { src: 'images/Nature 1.jpg', alt: 'Image 1', caption: 'This is image 1' },
+    {src: 'images/Nature 1.jpg' },
     { src: 'images/img2.jpg', alt: 'Image 2', caption: 'This is image 2' },
     { src: 'images/img3.jpg', alt: 'Image 3', caption: 'This is image 3' },
     { src: 'images/img4.jpg', alt: 'Image 4', caption: 'This is image 4' },
