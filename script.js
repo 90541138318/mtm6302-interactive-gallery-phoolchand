@@ -1,17 +1,20 @@
 // Array of objects containing image data
 const images = [
-    {src: 'images/Nature 1.jpg' },
-    { src: 'images/img2.jpg', alt: 'Image 2', caption: 'This is image 2' },
-    { src: 'images/img3.jpg', alt: 'Image 3', caption: 'This is image 3' },
-    { src: 'images/img4.jpg', alt: 'Image 4', caption: 'This is image 4' },
-    { src: 'images/img5.jpg', alt: 'Image 5', caption: 'This is image 5' },
-    { src: 'images/img6.jpg', alt: 'Image 6', caption: 'This is image 6' },
-    { src: 'images/img7.jpg', alt: 'Image 7', caption: 'This is image 7' },
-    { src: 'images/img8.jpg', alt: 'Image 8', caption: 'This is image 8' },
-    { src: 'images/img9.jpg', alt: 'Image 9', caption: 'This is image 9' },
-    { src: 'images/img10.jpg', alt: 'Image 10', caption: 'This is image 10' },
-    { src: 'images/img11.jpg', alt: 'Image 11', caption: 'This is image 11' },
-    { src: 'images/img12.jpg', alt: 'Image 12', caption: 'This is image 12' }
+    {src: 'images/Nature1.jpg'},
+    {src: 'images/bath.jpeg'},
+    {src: 'images/church.jpeg'},
+    {src: 'images/foggy.jpeg'},
+    {src: 'images/fountain.jpeg'},
+    {src: 'images/lion1.jpg'},
+    {src: 'images/longstairs.jpeg'},
+    {src: 'images/mountain.jpeg'},
+    {src: 'images/nightmountain.jpeg'},
+    {src: 'images/river.jpeg'},
+    {src: 'images/rivercanon.jpeg'},
+    {src: 'images/switzerland.jpeg'},
+    {src: 'images/TWOBIRDS.jpeg'},
+    {src: 'images/vespa.jpeg'},
+    {src: 'images/wARNERS.jpeg'},
 ];
 
 // Get the gallery container
