@@ -28,49 +28,77 @@ header {
     padding: 20px;
 }
 
-/* Image Styling */
+/* Image Styling: equal-size tiles so the grid looks neat */
 .gallery-container img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery-container img:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 /* Modal Styling */
 .modal {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    flex-direction: column;      /* stack image above caption (this fixes the left shift) */
     justify-content: center;
     align-items: center;
+    gap: 12px;
+    padding: 56px 16px 24px;
     text-align: center;
     z-index: 1000;
 }
 
 .modal-image {
-    max-width: 90%;
-    max-height: 80%;
+    max-width: 100%;
+    max-height: 75vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
 }
 
 .modal-caption {
     color: #fff;
-    margin-top: 10px;
     font-size: 18px;
+}
+
+.modal-caption:empty {
+    display: none;
 }
 
 .close-btn {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 12px;
+    right: 20px;
     color: #fff;
-    font-size: 30px;
+    font-size: 40px;
+    line-height: 1;
     cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #ccc;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .modal-image {
+        max-height: 65vh;
+    }
 }
