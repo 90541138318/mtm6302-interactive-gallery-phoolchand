@@ -3,8 +3,7 @@
 
 An interactive gallery for browsing and viewing media, built as a project during my Interactive Media Design program at Algonquin College.
 
-> **Live demo:** [add link here]
-> **Screenshot:** ![Interactive Media Gallery screenshot](./screenshot.png)
+
 
 ---
 
